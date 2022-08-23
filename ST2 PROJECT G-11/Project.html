@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charsete="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        body {
+            background: url("https://media.istockphoto.com/photos/abstract-luxurious-polygonal-black-background-with-gold-accents-frame-picture-id1249749650?b=1&k=20&m=1249749650&s=170667a&w=0&h=iz5G9XEqoN8KL7YA2diq8sao7TR7ltulZ3OZ1UKDEbM=");
+            margin: 75px;
+            padding: 0px;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            color: rgb(139, 164, 186);
+            font-family: 'Dekko', cursive;
+        }
+
+        h1 {
+            animation: blinking 1.5s 2;
+        }
+
+        @keyframes blinking {
+            0% {color: yellow;}
+
+            47% {color: rgb(186, 112, 179);}
+
+            62% {color: transparent;}
+
+            97% {color: transparent;}
+
+            100% {color: rgb(187, 114, 183);}
+        }
+
+        #myinput {
+            text-align: center;
+            font-size: small;
+        }
+
+        #myinput input {
+            width: 45%;
+            padding: 18px 68px;
+            margin: 4px 4px;
+            box-sizing: border-box;
+            border-radius: 14px;
+        }
+
+        ::placeholder {
+            color: #cf2727;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        #myinput button {
+            background-color: #725b42;
+            color: #e1d2ea;
+            font-size: 19px;
+            width: 21%;
+            padding: 9px 23px;
+            margin: 19px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+            box-shadow: 0 8px 16px 0 rgb(0 0 0 / 107%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        }
+
+        #myinput button:hover {
+            background-color: #002ead;
+            transition: 0.7s;
+        }
+
+
+        #square {
+            text-align: center;
+            margin-left: 50%;
+            margin-top: 5%;
+            transition-duration: 2s;
+            transition-delay: 1s;
+            padding-top: none;
+        }
+    </style>
+
+<body>
+    <div id="myinput">
+        <h1 class="txt">Enter number to create a Square</h1>
+        <br>
+        <input type="number" name="size" id="size" placeholder="Enter only 5 digits" />
+        <br>
+        <button onclick="check()">Create a Square Shape</button>
+        <div id="square">
+        </div>
+    </div>
+
+
+    <script>
+        function check() {
+            let val = document.getElementById("size").value;
+
+            if (val == "" || val == null || val == " ") {
+                alert("Enter a value");
+            }
+            else {
+                val = Number(val);
+                let counts = val.toString().length;
+
+                if (!isNaN(val) && counts == 5) {
+                    var digits = val.toString().split("");
+                    var digits1 = digits.map(Number);
+                    let sum = 0;
+
+                    for (let i = 0; i < digits1.length; i++) {
+                        sum = sum + digits1[i];
+                    }
+                    document.getElementById("square").style.width = sum + "px";
+                    document.getElementById("square").style.height = sum + "px";
+                    document.getElementById("square").style.backgroundColor = "white";
+
+                    document.getElementById("square").style.borderRadius = sum / 5 + "px";
+                }
+                else {
+                    alert("Enter a number/Digit counting should be ==5");
+                }
+            }
+        }
+    </script>
+</body>
+</head>
+
+</html>
