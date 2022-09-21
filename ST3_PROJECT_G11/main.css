@@ -1,0 +1,285 @@
+html {
+  box-sizing: border-box; 
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: url("https://wallpapercave.com/wp/wp2991159.jpg");
+  /* background-repeat: no-repeat; */
+  /* background-position: fixed; */
+}
+
+h1 {
+  color: rgb(123, 176, 237);
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Entering the weight */
+
+h3{
+  color: rgb(215, 206, 156);
+  font-size: 25px;
+  text-align: center;
+  
+}
+
+
+.kg {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.row .inp {
+  text-align: center;
+  height: 20px;
+  width: 250px;
+  border-radius: 20px;
+  border: 3px solid #555;
+  background-color: #b0d7e2;
+  color: #101011;
+}
+
+/*List styling*/
+.planetname {
+  width: 575px;
+  margin-left: 24px;
+  float:left;
+}
+
+.planetname li {
+  padding: -20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-right: 25px;
+  display: block;
+}
+
+.planetname li a {
+  text-decoration: none;
+  color: #76898e;
+  font-size: 25px;
+  padding: -20px;
+  font-family: cursive;
+}
+.planetname li :hover {
+  color: #a665d2;
+  text-decoration: underline;
+
+}
+
+/******************
+Star
+******************/
+
+.solar {
+  height: 200px;
+  width: 632px;
+  margin: 45px auto;
+  float:right;
+}
+
+.sun {
+  width: 40px;
+  height: 40px;
+  background: -webkit-linear-gradient(left, #fefc 0%, #f1da36 100%);
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 230px;
+  border-radius: 50%;
+  animation: rotation 2s linear infinite;
+}
+
+/*Mercury*/
+
+.mercurybox {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid #30374D;
+  animation: rotation 7s linear infinite;
+  position: absolute;
+  margin-top: 210px;
+  margin-left: 210px;
+}
+
+.mercury {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+/*Venus*/
+
+.venusbox {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: 1px solid #30374D;
+  animation: rotation 12s linear infinite;
+  position: absolute;
+  margin-top: 185px;
+  margin-left: 185px
+}
+
+.venus {
+  width: 15px;
+  height: 15px;
+  background-color: #C4640D;
+  border-radius: 50%;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+/*Earth*/
+
+.earthbox {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 1px solid #30374D;
+  animation: rotation 17s linear infinite;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 150px
+}
+
+.earth {
+  width: 10px;
+  height: 10px;
+  background-color: #2D4563;
+  border-radius: 50%;
+  margin-top: 24px;
+  margin-left: 24px;
+  position: absolute;
+}
+
+/*Mars*/
+
+.marsbox {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 1px solid #30374D;
+  animation: rotation 22s linear infinite;
+  position: absolute;
+  margin-top: 125px;
+  margin-left: 125px;
+}
+
+.mars {
+  width: 8px;
+  height: 8px;
+  background-color: #91554C;
+  border-radius: 50%;
+  margin-top: 32px;
+  margin-left: 32px;
+}
+
+/*Jupiter*/
+
+.jupiterbox {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 1px solid #30374D;
+  animation: rotation 27s linear infinite;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.jupiter {
+  width: 20px;
+  height: 20px;
+  background-color: #af460f;
+  border-radius: 50%;
+  margin-top: 33px;
+  margin-left: 33px;
+}
+
+/*Saturn*/
+
+.saturnbox {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  border: 1px solid #30374D;
+  animation: rotation 32s linear infinite;
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 75px;
+}
+
+.saturn {
+  width: 10px;
+  height: 10px;
+  background-color: #F0DFC2;
+  border-radius: 50%;
+  margin-top: 46px;
+  margin-left: 46px;
+}
+
+/*Uranus*/
+
+.uranusbox {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 1px solid #30374D;
+  animation: rotation 37s linear infinite;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.uranus {
+  width: 8px;
+  height: 8px;
+  background-color: #0297C2;
+  border-radius: 50%;
+  margin-top: 54px;
+  margin-left: 54px;
+}
+
+/*Neptune*/
+
+.neptunebox {
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  border: 1px solid #30374D;
+  animation: rotation 47s linear infinite;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.neptune {
+  width: 8px;
+  height: 8px;
+  background-color: #265793;
+  border-radius: 50%;
+  margin-top: 61px;
+  margin-left: 61px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+
+  }
+
+  100% {
+    transform: rotate(360deg);
+
+  }
+}
