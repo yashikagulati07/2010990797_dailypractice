@@ -1,0 +1,18 @@
+/* h1{
+    font-family: 'Dekko', cursive;
+    text-decoration: overline;
+    text-decoration: underline;
+} */
+.heading{
+    color: rgb(37, 36, 38);
+    text-shadow: 2px 2px 5px rgb(49, 47, 47);
+    font-family: 'Dekko', cursive;
+    text-decoration: underline;
+}
+.btn{
+    width: 100px;
+}
+.choosefile{    
+    border: 2px silod brown;
+    border-radius: 5px;
+}

@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "name": "Pankaj",
+      "indate": "2022-07-12",
+      "checkin": "04:57",
+      "outdate": "2022-07-16",
+      "checkout": "12:00",
+      "number": "876535678",
+      "payment": "4500",
+      "id": 3
+    },
+    {
+      "name": "Arshit",
+      "indate": "2022-05-03",
+      "checkin": "03:20",
+      "outdate": "2022-05-07",
+      "checkout": "12:00",
+      "number": "6756785678",
+      "payment": "3500",
+      "id": 4
+    },
+    {
+      "name": "Mala",
+      "indate": "2022-08-01",
+      "checkin": "06:45",
+      "outdate": "2022-12-20",
+      "checkout": "12:00",
+      "number": "6783456132",
+      "payment": "7000",
+      "id": 5
+    },
+    {
+      "name": "Bobby",
+      "indate": "2022-06-12",
+      "checkin": "04:00",
+      "outdate": "2022-06-18",
+      "checkout": "12:00",
+      "number": "8978967896",
+      "payment": "6500",
+      "id": 6
+    },
+    {
+      "name": "Yashika",
+      "indate": "2022-11-07",
+      "checkin": "14:00",
+      "outdate": "2022-11-08",
+      "checkout": "12:00",
+      "number": "6734567893",
+      "payment": "1500",
+      "id": 7
+    }
+  ]
+}

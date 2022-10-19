@@ -1,0 +1,9 @@
+.submit-text{
+    border-radius: 10px;
+    width: 300px;    
+}
+.heading2{
+    font-family: 'Dekko', cursive;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px rgb(86, 77, 77);
+}
